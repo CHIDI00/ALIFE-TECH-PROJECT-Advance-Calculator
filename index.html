@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/calculator.css">
+
+  <title>Alife Calculator Project</title>
+</head>
+<body>
+  <div class="main-calculator-body">
+
+    <div class="calculator">
+
+      <div class="top-navbar">
+        <p>Calculator</p>
+        <button class="nav-icon"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div class="inputArea">
+        <input type="text" class="display-input-value">
+        <input type="text" placeholder="0">
+      </div>
+
+      <div class="button">
+        <button type="button" onclick="clr()" class="btn btn-gray btn-clear" id="clear">AC</button>
+        <button type="button" onclick="del()" class="btn btn-gray" id="-"><</button>
+        <button type="button" onclick="calculate('%')" class="btn btn-gray" id="%">%</button>
+        <button type="button" onclick="calculate('/')" class="btn btn-white" id="/">&divide;</button>
+
+        <button type="button" onclick="calculate(7)" class="btn btn-darkgray" id="7">7</button>
+        <button type="button" onclick="calculate(8)" class="btn btn-darkgray" id="8">8</button>
+        <button type="button" onclick="calculate(9)" class="btn btn-darkgray" id="9">9</button> 
+        <button type="button" onclick="calculate('*')" class="btn btn-white" id="*">x</button>
+
+        <button type="button" onclick="calculate(4)" class="btn btn-darkgray" id="4">4</button>
+        <button type="button" onclick="calculate(5)" class="btn btn-darkgray" id="5">5</button>
+        <button type="button" onclick="calculate(6)" class="btn btn-darkgray" id="6">6</button>
+        <button type="button" onclick="calculate('-')" class="btn btn-white" id="-">-</button>
+
+        <button type="button" onclick="calculate(1)" class="btn btn-darkgray" id="1">1</button>
+        <button type="button" onclick="calculate(2)" class="btn btn-darkgray" id="2">2</button>
+        <button type="button" onclick="calculate(3)" class="btn btn-darkgray" id="3">3</button>
+        <button type="button" onclick="calculate('+')" class="btn btn-white" id="+">+</button>
+
+        <button type="button" onclick="calculate('+')" class="btn btn-yellow" id="+"><></button>
+
+        <button type="button" onclick="calculate(0)" class="btn btn-darkgray btn-zero" id="0">0</button>
+        <button type="button" onclick="calculate('.')" class="btn btn-darkgray" id=".">.</button>
+        <button type="button" onclick="Result()" class="btn btn-orange btn-equal" id="equal">=</button>
+    
+    </div>
+    </div>
+
+  </div>
+</body>
+</html>

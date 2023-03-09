@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-calculator-body {
+  display: inline-block;
+  max-width: 100%;
+  width: 320px;
+  height: 80%;
+  border-radius: 20px;
+  background-color: rgb(42, 42, 77);
+  overflow: hidden;
+}
+
+.top-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.top-navbar p {
+  font-size: 1.7rem;
+}
+
+.top-navbar button {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.top-navbar button:hover {
+  background-color: rgb(56, 56, 85);
+}
+
+.inputArea {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-bottom: 60px;
+}
+
+.inputArea input {
+  width: 100%;
+  padding: 5px 20px;
+  text-align: right;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.inputArea input:first-child {
+  font-size: 2rem;
+  color: rgb(133, 133, 132);
+  background-color: transparent;
+}
+
+.inputArea input:last-child {
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 420px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  justify-content: space-between;
+  gap: 5px;
+  background-color: rgb(1, 1, 17);
+}
+
+.button button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 50%;
+  color: #fff;
+  background-color: transparent;
+}
+
+button.btn-white {
+  background-color: #fff;
+  color: #000;
+}
+
+button.btn-orange {
+  background-color: orangered;
+}
+
+button.btn-white:hover {
+  background-color: #ccc8c8;
+}
+
+button.btn-orange:hover {
+  background-color: rgb(253, 111, 59);
+}
+
+button.btn-darkgray:hover {
+  background-color: #0b0e2f;
+}
